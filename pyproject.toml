@@ -66,4 +66,5 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
-addopts = "-v"  # always verbose so I can see which tests are running
+# added --tb=short so tracebacks aren't overwhelming when something breaks
+addopts = "-v --tb=short"
