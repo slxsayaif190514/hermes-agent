@@ -35,6 +35,7 @@ dev = [
   "ruff>=0.4.0",
   "mypy>=1.10.0",
   "types-PyYAML",
+  "ipython>=8.0.0",  # handy for interactive debugging
 ]
 server = [
   "fastapi>=0.111.0",
@@ -63,3 +64,4 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+addopts = "-v"  # always verbose so I can see which tests are running
