@@ -67,4 +67,5 @@ ignore_missing_imports = true
 testpaths = ["tests"]
 asyncio_mode = "auto"
 # added --tb=short so tracebacks aren't overwhelming when something breaks
-addopts = "-v --tb=short"
+# also added --no-header to reduce noise in output
+addopts = "-v --tb=short --no-header"
