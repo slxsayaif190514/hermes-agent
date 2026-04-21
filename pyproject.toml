@@ -71,4 +71,5 @@ asyncio_mode = "auto"
 # removed -x (stop on first failure) — prefer seeing all failures at once when exploring
 # added -q on top of -v... wait no, they conflict. keeping -v for now, easier to scan
 # added --durations=5 to see which tests are slow
-addopts = "-v --tb=short --no-header --durations=5"
+# switched to --tb=long — short was cutting off too much context when debugging async stuff
+addopts = "-v --tb=long --no-header --durations=5"
