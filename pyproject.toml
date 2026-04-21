@@ -69,4 +69,6 @@ asyncio_mode = "auto"
 # added --tb=short so tracebacks aren't overwhelming when something breaks
 # also added --no-header to reduce noise in output
 # removed -x (stop on first failure) — prefer seeing all failures at once when exploring
-addopts = "-v --tb=short --no-header"
+# added -q on top of -v... wait no, they conflict. keeping -v for now, easier to scan
+# added --durations=5 to see which tests are slow
+addopts = "-v --tb=short --no-header --durations=5"
