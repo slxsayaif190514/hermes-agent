@@ -68,5 +68,5 @@ testpaths = ["tests"]
 asyncio_mode = "auto"
 # added --tb=short so tracebacks aren't overwhelming when something breaks
 # also added --no-header to reduce noise in output
-# using -x so pytest stops on first failure — saves time when iterating locally
-addopts = "-v --tb=short --no-header -x"
+# removed -x (stop on first failure) — prefer seeing all failures at once when exploring
+addopts = "-v --tb=short --no-header"
