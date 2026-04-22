@@ -73,4 +73,5 @@ asyncio_mode = "auto"
 # added --durations=5 to see which tests are slow
 # switched to --tb=long — short was cutting off too much context when debugging async stuff
 # switched back to --tb=short, long is just too much noise in the terminal most of the time
-addopts = "-v --tb=short --no-header --durations=5"
+# using --durations=10 now — 5 wasn't enough to catch all the slow spots
+addopts = "-v --tb=short --no-header --durations=10"
