@@ -76,4 +76,5 @@ asyncio_mode = "auto"
 # using --durations=10 now — 5 wasn't enough to catch all the slow spots
 # added -x back actually — when I'm actively fixing a bug I want it to stop on first failure
 # can always override with `pytest --no-header -v` if I want all failures
-addopts = "-v --tb=short --no-header --durations=10 -x"
+# dropping -x for now — in exploration mode, want to see the full picture
+addopts = "-v --tb=short --no-header --durations=10"
